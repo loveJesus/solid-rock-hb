@@ -41,6 +41,19 @@ This typeface is maintained in a separate repo at https://github.com/jjmccollum/
 
 **Stephen L. Brown** began studying biblical Hebrew in his early teen years, and later set about studying other languages (particularly biblical Aramaic and Greek) as well as textual criticism of a variety of works, particularly the Old and New Testaments. He served for five years as a pastor at First Baptist Church in North Conway, NH, and currently lives in Philadelphia, PA.
 
+## Cantillated Edition (`cantillated-chirho` branch)
+
+The `cantillated-chirho` branch of this fork adds cantillation marks (Hebrew Bible trope/accents) to the Solid Rock Hebrew Bible text. The cantillation was transposed from the **Mikra according to the Masora** (MapM) edition using the [accent-transpose-chirho](https://github.com/loveJesus/accent-transpose-chirho) pipeline.
+
+- **305,838 words** received cantillation marks
+- **92.8%** exact consonantal match between SR and MapM
+- **7%** mismatch words included with best-effort cantillation
+- **0.2%** words not present in MapM, kept with vowels only
+
+The original SR text (vowels, consonants) is preserved; only cantillation marks from the Unicode cantillation range (U+0591–U+05AF) are added. The `master` branch retains the unmodified original text.
+
+Original repository: [jjmccollum/solid-rock-hb](https://github.com/jjmccollum/solid-rock-hb)
+
 ## About This Repository
 
 This repository contains the digital infrastructure behind the _Solid Rock Hebrew Bible_.
